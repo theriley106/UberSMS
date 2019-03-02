@@ -25,3 +25,4 @@ User cancels ride - screen says rider has cancelled
 
 
 - Make Web app that you can scan QR code on driver side side
+- Connect buttons to web app
