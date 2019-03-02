@@ -1,7 +1,7 @@
 import requests
 from keys import *
 
-def auth(url):
+def authorize(url):
 	files = {
 	    'client_secret': (None, CLIENT_SECRET),
 	    'client_id': (None, CLIENT_ID),
