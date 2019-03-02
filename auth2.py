@@ -1,7 +1,7 @@
 import requests
 from keys import *
 
-def authorize(url):
+def authorize(uri):
 	files = {
 	    'client_secret': (None, CLIENT_SECRET),
 	    'client_id': (None, CLIENT_ID),
@@ -11,4 +11,6 @@ def authorize(url):
 	}
 
 	response = requests.post('https://login.uber.com/oauth/v2/token', files=files)
-	print response.json()['access_token']
+	x = response.json()
+	print x
+	return x['access_token']
